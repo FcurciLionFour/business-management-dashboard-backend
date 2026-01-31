@@ -20,8 +20,8 @@
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
     "test:e2e": "jest --config ./test/jest-e2e.json",
     "postinstall": "npx prisma@6.1.0 generate",
-    "build": "node ./node_modules/@nestjs/cli/bin/nest.js build"
-  "start:prod": "node dist/main.js"
+    "build": "node ./node_modules/@nestjs/cli/bin/nest.js build",
+    "start:prod": "node dist/main.js"
   },
   "prisma": {
     "seed": "ts-node prisma/seed.ts"
@@ -54,7 +54,7 @@
     "@types/cookie-parser": "^1.4.10",
     "@types/express": "^5.0.0",
     "@types/jest": "^30.0.0",
-    "@nestjs/cli": "11.0.0"
+    "@nestjs/cli": "11.0.0",
     "@types/node": "^22.19.7",
     "@types/passport-jwt": "^4.0.1",
     "@types/supertest": "^6.0.2",
