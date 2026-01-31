@@ -21,6 +21,9 @@
     "test:e2e": "jest --config ./test/jest-e2e.json",
     "postinstall": "npx prisma@6.0.0 generate",
     "build": "node ./node_modules/@nestjs/cli/bin/nest.js build",
+    "start:prod": "node dist/main.js",
+    "db:migrate": "npx prisma migrate deploy",
+    "db:seed": "npx prisma db seed",
     "start:prod": "node dist/main.js"
   },
   "prisma": {
